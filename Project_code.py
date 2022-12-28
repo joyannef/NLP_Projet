@@ -25,7 +25,4 @@ def make_trigrams(s):
 
 print (make_trigrams(t))
 
-
-print (make_trigrams(splited))
-
 def make_conditional_probas(p):
