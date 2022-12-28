@@ -17,10 +17,14 @@ with open ('/Users/jfoster/Documents/PluriTAL/NLP/test_reviews.txt') as test:
     data = test.read()
     x = data.replace ("\n", " ")
     splited = x.split(" ")
+    t = tuple(splited)
 
 def make_trigrams(s):
     trigrams = [s[i: i + 3] for i in range(len(s) - 2)]
     print(trigrams)
+
+print (make_trigrams(t))
+
 
 print (make_trigrams(splited))
 
