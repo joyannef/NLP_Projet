@@ -4,7 +4,7 @@ import numpy as np
 # a.
     # P(A|B) = P(AB)/P(B)
     # As the Bayes formula indicates, we can calculate the probability of knowing a word from the two previous words with the following logic:
-    # P(A|B) would represent the probability of knowing a word given the words before it eg. (P(like|w1, w2....wn).
+    # P(A|B) would represent the probability of knowing a word given the words before it eg. (P(like|w1, w2....wn)).
     # This is the probability of the number of times "like" appears given other words in a sentence.
     # In this sense, A = like and B = the other words
     # We then need to multiply the probabilities of A and B and divide this result by P(B) in order to calculate the probablity of 
