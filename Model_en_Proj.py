@@ -121,7 +121,7 @@ print (generate())
 # "I like chocolate pudding . END not like chocolate . END"
 # "I do chocolate pudding . END not like chocolate . END"
 # The sentences obtained are comprehensible to a point, but we can observe the unnecessary spaces before the
-# periods and the fact that the words that follow the period are grammatical but non-sensical. As a remark from question 1.d
+# periods and the fact that the words that follow the period are grammatical but non-sensical. As a remark from question 1.d,
 # it can also be noted that all sentences start with "I", which proves the hypothesis that the words "BEGIN NOW" serves as a
 # purpose to indicate the word that should start each sentence.
 
