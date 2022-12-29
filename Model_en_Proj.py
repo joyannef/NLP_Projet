@@ -46,7 +46,6 @@ with open("test_reviews.txt") as file:
         get_trigrams(row)
         print(len(tupList))
 
-
 # c.
 # takes each tuple and append to dict
 # occurrence represents the count table of each bi-gram
@@ -110,16 +109,19 @@ def generate ():
     for k, v in occurence.items():
         print_list.append(sample_from_discrete_distrib(v))
 
-    print(' '.join(print_list))
+    for item in print_list:
+        if item == "END":
+            print_list.remove(item)
 
+    print(' '.join(print_list))
     print(sample_from_discrete_distrib(occurence))
 
 print (generate())
 
 # Some of the sentences obtained from the algorithm were the following:
-# "I like chocolate ice-cream . END not like chocolate . END"
-# "I like chocolate pudding . END not like chocolate . END"
-# "I do chocolate pudding . END not like chocolate . END"
+# "I like chocolate ice-cream . not like chocolate ."
+# "I like chocolate pudding . not like chocolate . "
+# "I do chocolate pudding . not like chocolate . "
 # The sentences obtained are comprehensible to a point, but we can observe the unnecessary spaces before the
 # periods and the fact that the words that follow the period are grammatical but non-sensical. As a remark from question 1.d,
 # it can also be noted that all sentences start with "I", which proves the hypothesis that the words "BEGIN NOW" serves as a
