@@ -46,11 +46,6 @@ with open("/Users/jfoster/Documents/PluriTAL/NLP/test_reviews.txt") as file:
         get_trigrams(row)
         print(len(tupList))
 
-''' 
-# this should be a function
-
-'''
-
 
 # c.
 # takes each tuple and append to dict
