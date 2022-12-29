@@ -40,7 +40,7 @@ def get_trigrams(sentStr):
     print(tupList)
 
 
-with open("/Users/jfoster/Documents/PluriTAL/NLP/test_reviews.txt") as file:
+with open("test_reviews.txt") as file:
     rows = file.readlines()
     for row in rows:
         get_trigrams(row)
