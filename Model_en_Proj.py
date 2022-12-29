@@ -1,3 +1,7 @@
+import pprint as pp
+from collections import defaultdict
+import numpy as np
+
 # Exercise.1
 # a.
     # P(A|B) = P(AB)/P(B)
@@ -12,10 +16,6 @@
 # reading model file to calculate proba of words/ sentences 
 # read with readlines() as strings 
 
-
-import pprint as pp 
-from collections import defaultdict 
-import numpy as np
 
 wordList = []
 tupList = []
